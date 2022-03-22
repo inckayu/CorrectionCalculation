@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Toshin_correction_calculation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>工数計算ツール</h1>
+
+    <form name="input">
+        <p>単価</p>
+        <select name="money" id="money">
+            <option value="2000">2000</option>
+            <option value="2500">2500</option>
+            <option value="3000">3000</option>
+            <option value="3500">3500</option>
+        </select>
+
+        <p>大学名</p>
+        <select name="univ_name" id="univ_name">
+            <option disabled selected>大学を選択してください</option>
+            <option value="2011">東京大学</option>
+            <option value="2041">東京工業大学</option>
+        </select>
+
+        <p>年度</p>
+        <select name="year" id="year">
+            <option value="011">2011</option>
+            <option value="012">2012</option>
+            <option value="013">2013</option>
+            <option value="014">2014</option>
+            <option value="015">2015</option>
+            <option value="016">2016</option>
+            <option value="017">2017</option>
+            <option value="018">2018</option>
+            <option value="019">2019</option>
+            <option value="020">2020</option>
+            <option value="021">2021</option>
+        </select>
+
+        <script src="univ_and_question_selection.js"></script>
+
+        <p>大問</p>
+        <select name="question_name" id="question_name" disabled>
+            <option value="00" disabled selected>大問を選択してください</option>
+        </select>
+
+        <p>枚数</p>
+        <input type="text" id="number" placeholder="半角数字で入力してください" disabled>
+    </form>
+
+    <div id="buttons">
+        <button class = "button" id="add" onclick="clickAdd()">追加</button>
+        <!-- <button class = "button" id="result" onclick="clickResult()">合計給与を表示</button> -->
+    </div>
+    <div id = saraly>
+        <p class="index">今追加した工数分の給与：</p>
+        <p class="content" id="test"></p>
+        <p class="index">累計給与：</p>
+        <p class="content" id="sample"></p>
+        <script src="append_list.js"></script>
+    </div>
+</body>
+</html>

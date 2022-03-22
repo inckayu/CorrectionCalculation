@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.button {
+    background-color: rgb(3, 110, 35);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.index {
+    margin-bottom: 0px;
+}
+
+.content {
+    font-size: 30px;
+    font-weight: bolder;
+    color: red;
+    margin-top: 0px;
+}
